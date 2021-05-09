@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SpaceGroove - Sign Up</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width initial-scale=1 shrink-to-fit=no">
+    <link rel="shortcut icon" href="images/favicon.ico"/>
+
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+	<!-- OUR FONTS -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:100,300,100italic,400,300italic' type='text/css' rel='stylesheet'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' type='text/css' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" type="text/css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" type="text/css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap" rel="stylesheet">
+	
+</head>
+
+<body>
+	<!-- NAVBAR -->
+	<nav class="navbar">
+		<a class="logo" href="../index.html"><img src="../images/rocket1_copia.png" alt=""></a>
+        <ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#pianeti">Pianeti</a></li>
+            <li><a id="chiSiamo" href="../chisiamo/index.html">Chi Siamo</a></li>
+			<li class="account"><a class="current" href="../signup/index.html">Sign Up</a></li>
+			<li class="account"><a href="../login/index.html">Log In</a></li>
+		</ul>
+		
+		<div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+	<!-- NAVBAR ENDS -->
+
+	<div class="login-dark">
+        <form method="post">
+            <p style="font-size: 20px; padding:1px;"> Registrati per rimanere aggiornato!</p>
+			<div class="form-group">
+				<input class="col" type="name" name="nome" placeholder="Nome">
+				<input class="col" type="cognome" name="cognome" placeholder="Cognome">
+			</div>
+            <div class="form-group">
+				<input class="form-control" type="email" name="email" placeholder="Email">
+				<input class="form-control" type="email" name="email" placeholder="Conferma Email">
+			</div>
+            <div class="form-group">
+				<input class="col" type="password" name="password" placeholder="Password 🔒">
+				<input class="col" type="password" name="password" placeholder="Conferma Password 🔒">
+			</div>
+			<div class="form-group">
+				<br>
+				Se vieni da un altro pianeta, facci sapere di più su di te 🌍:
+				<input class="col" type="text" name="specie" placeholder="Specie 👽"><br><br>
+				Pianeta🪐:
+				<select class="form-control" name="pianeta" aria-placeholder="pianeta">
+					<option></option>
+					<option value="terra">Terra</option>
+					<option value="marte"> Marte </option>
+					<option value="saturno"> Saturno </option>
+					<option value="nettuno"> Nettuno </option>
+					<option value="giove"> Giove </option>
+					<option value="urano"> Urano </option>
+					<option value="luna"> Luna </option>
+					<option value="mercurio"> Mercurio </option>
+					<option value="venere"> Venere </option>
+					<option value="altro">Altra Galassia</option>
+				</select>
+			</div>
+            <div class="form-group">
+				<button class="btn btn-primary btn-block" type="submit">Register</button>
+				<button class="btn btn-primary btn-block" type="reset">Reset</button>
+			</div>
+		</form>
+    </div>
+
+	<!-- FOOTER -->
+	<footer id="footer">
+		<div class="container">
+			<div class="row text-center">	
+				<p>
+					&copy; 2021 SpaceGroove | Web Languages and Technologies' project, by A. Nicolella and M. Moscatelli
+				</p>
+			</div>
+		</div>		
+	</footer>
+	<!-- FOOTER ENDS -->	
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

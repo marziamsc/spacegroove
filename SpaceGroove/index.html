@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>SpaceGroove - HomePage</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width initial-scale=1 shrink-to-fit=no">
+	<link rel="shortcut icon" href="images/favicon.ico"/>
+
+	<link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+	<!--link href="css/loader.css" rel="stylesheet"-->	
+	<!--link href="css/font-awesome.min.css" rel="stylesheet"-->
+	<!--link rel="stylesheet" type="text/css" href="slick/slick.css"/-->
+<!--	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.min.css" integrity="sha512-BiFZ6oflftBIwm6lYCQtQ5DIRQ6tm02svznor2GYQOfAlT3pnVJ10xCrU3XuXnUrWQ4EG8GKxntXnYEdKY0Ugg==" crossorigin="anonymous" /> -->
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+	<!-- OUR FONTS -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:100,300,100italic,400,300italic' type='text/css' rel='stylesheet'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' type='text/css' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" type="text/css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" type="text/css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap" rel="stylesheet">
+</head>
+	
+<body>
+
+	<!-- PRELOADER
+		<div id="loader-wrapper">
+			<div id="loader">
+				<div class="sk-spinner sk-spinner-cube-grid">
+					<div class="sk-cube"></div>
+					<div class="sk-cube"></div>
+					<div class="sk-cube"></div>
+					<div class="sk-cube"></div>
+					<div class="sk-cube"></div>
+					<div class="sk-cube"></div>
+					<div class="sk-cube"></div>
+					<div class="sk-cube"></div>
+					<div class="sk-cube"></div>
+				</div>
+			</div>
+		</div>	
+	-->
+
+	<!-- NAVBAR -->
+	<nav class="navbar">
+		<a class="logo" href="#"><img src="images/rocket1_copia.png" alt=""></a>
+        <ul class="menu">
+            <li><a class="current" href="index.html">Home</a></li>
+            <li><a href="#pianeti">Pianeti</a></li>
+            <li><a id="chiSiamo" href="chisiamo/index.html">Chi Siamo</a></li>
+			<li class="account"><a  href="signup/index.html">Sign Up</a></li>
+			<li class="account"><a  href="login/index.html">Log In</a></li>
+		</ul>
+
+		<div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+	<!-- NAVBAR ENDS -->
+
+	<!-- HEADER -->
+		<section id="header">
+			<div class="container">
+				<div class="row text-center">
+					<div class="col-md-8">
+						<img class="textLogo" src="images/textLogo.png"/>
+						<h1 class="white-text">The natural world does not end at the Earth's stratosphere.</h1>
+						<h6 class="white-text">Our planet is part of a bigger picture - a cosmos which has fascinated humans since we first gazed at the night sky.</h6>
+						<!-- <div id="countdown" class="white-text"></div> --> <!-- a che serve??? -->
+					</div>
+				</div>
+			</div>
+			<div class="animation">
+				<a class="arrow-down-animation" data-scroll href="#about"><i class="fa fa-angle-down"></i></a>
+			</div>
+		</section>
+	<!-- HEADER ENDS -->
+	
+	
+	<!-- ABOUT -->
+		<section id="about">
+			<div class="container">
+				<div class="row text-center">
+					<!-- Section 1 -->
+					<div data-sr="enter top over 1s, wait 0.3s, move 24px, reset" class="col-md-4">
+						<i class="fa fa-laptop"></i>
+						<h3>Responsive Design</h3>
+						<div class="colored-line-small-center"></div>
+						<p>Lorem ipsum dolor sit amet, ed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+					</div>
+					<!-- Section 2 -->
+					<div data-sr="enter bottom over 1s, wait 0.3s, move 24px, reset" class="col-md-4 middle">
+						<i class="fa fa-lightbulb-o"></i>
+						<h3>Creative Design</h3>
+						<div class="colored-line-small-center"></div>						
+						<p>Lorem ipsum dolor sit amet, ed do eiusmod tempor incididunt ut labore et dolore magna.</p>						
+					</div>
+					<!-- Section 3 -->
+					<div data-sr="enter top over 1s, wait 0.3s, move 24px, reset" class="col-md-4">
+						<i class="fa fa-newspaper-o"></i>
+						<h3>Mailchimp Ready</h3>
+						<div class="colored-line-small-center"></div>
+						<p>Lorem ipsum dolor sit amet, ed do eiusmod tempor incididunt ut labore et dolore magna.</p>						
+					</div>
+				</div>
+			</div>			
+		</section>
+	<!-- ABOUT ENDS -->
+	
+	
+	<!-- CAROUSEL -->
+		<section id="pianeti"> <!-- mettere che quando cursore su pianeta compare nome -->
+			<div class="container">
+				<div class="carousel">
+					<a href="pianeti/giove.html"><div class="carousel-cell" title="Giove"><img class="carousel-image" data-flickity-lazyload="images/pianeti/giove.png"/></div></a>
+					<a href="pianeti/marte.html"><div class="carousel-cell" title="Marte"><img class="carousel-image" data-flickity-lazyload="images/pianeti/marte.png"/></div></a>
+					<a href="pianeti/mercurio.html"><div class="carousel-cell" title="Mercurio"><img class="carousel-image" data-flickity-lazyload="images/pianeti/mercurio.png"/></div></a>
+					<a href="pianeti/nettuno.html"><div class="carousel-cell" title="Nettuno"><img class="carousel-image" data-flickity-lazyload="images/pianeti/nettuno.png"/></div></a>
+					<a href="pianeti/urano.html"><div class="carousel-cell" title="Urano"><img class="carousel-image" data-flickity-lazyload="images/pianeti/urano.png"/></div></a>
+					<a href="pianeti/venere.html"><div class="carousel-cell" title="Venere"><img class="carousel-image" data-flickity-lazyload="images/pianeti/venere.png"/></div></a>
+					<a href="pianeti/luna.html"><div class="carousel-cell" title="Luna"><img class="carousel-image" data-flickity-lazyload="images/pianeti/luna.png"/></div></a>
+					<a href="pianeti/saturno.html"><div class="carousel-cell cell-large" title="Saturno"><img class="carousel-image large" data-flickity-lazyload="images/pianeti/saturno.png"/></div></a>
+					<a href="pianeti/terra.html"><div class="carousel-cell" title="Terra"><img class="carousel-image" data-flickity-lazyload="images/pianeti/terra.png"/></div></a>
+				</div>
+			</div>
+		</section>
+	<!-- CAROUSEL ENDS -->
+
+	<!-- FOOTER -->
+		<footer id="footer">
+			<div class="container">
+				<div class="row text-center">	
+					<p>
+						&copy; 2021 SpaceGroove | Web Languages and Technologies' project, by A. Nicolella and M. Moscatelli
+					</p>
+				</div>
+			</div>		
+		</footer>
+	<!-- FOOTER ENDS -->	
+
+
+	<!-- HAMBURGER -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script>
+        $(document).ready(function() {
+            $(".hamburger").on('click', function(){
+                $(".menu").toggleClass("menuopen")
+            });
+        });
+    </script>
+
+	<!-- CAROUSEL -->
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+	<script>
+		$('.carousel').flickity({
+		// options
+		cellAlign: 'left',
+		contain: true,
+		lazyLoad: 2, // load images in selected slide and next 2 slides and previous 2 slides
+		wrapAround: true, // At the end of cells, wrap-around to the other end for infinite scrolling
+		autoPlay: 2000,
+		pauseAutoPlayOnHover: true
+	  });
+	</script>
+
+	<!-- SMOOTH SCROLL -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+  		// Add smooth scrolling to all links
+  		$("a").on('click', function(event) {
+    		if (this.hash !== "") {
+      			// Prevent default anchor click behavior
+      			event.preventDefault();
+      			var hash = this.hash; // Store hash
+      			// Using jQuery's animate() method to add smooth page scroll
+      			$('html, body').animate(
+					{ scrollTop: $(hash).offset().top }, 
+					800, // The optional number specifies the number of milliseconds it takes to scroll to the specified area
+					function(){
+        				// Add hash (#) to URL when done scrolling (default click behavior)
+        				window.location.hash = hash;
+      				}
+				);
+    		}
+  		});
+	});
+	</script> 
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- PARALLAX IMG 
+	<script src="js/jquery.parallax-1.1.3.js"></script>
+	<!-- SCROLL REVEAL -->
+	<script src="js/scrollReveal.min.js"></script>
+	<!-- FUNCTIONS -->
+	<script src="js/functions.js"></script>
+</body>
+</html>
