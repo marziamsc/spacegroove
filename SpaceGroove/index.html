@@ -31,7 +31,7 @@
 
 	<!-- NAVBAR -->
 	<nav class="navbar">
-		<a class="logo" href="#"><img src="images/rocket1_copia.png" alt="logo"></a>
+		<a class="logo" href="#"><img src="images/rocket.png" alt="logo"></a>
         <ul class="menu">
             <li><a class="current" href="#">Home</a></li>
             <li><a href="#pianeti">Planets</a></li>
@@ -103,20 +103,17 @@
 	
 	<!-- CAROUSEL -->
 		<section id="pianeti"> 
-			<div id="dinamic">
-				- - -
-			</div>
 			<div class="container">
 				<div class="carousel">
-					<a href="pianeti/giove.html" title="Giove"><div class="carousel-cell"><img class="carousel-image" data-flickity-lazyload="images/pianeti/giove.png" alt="Giove"/></div></a>
-					<a href="pianeti/marte.html" title="Marte"><div class="carousel-cell"><img class="carousel-image" data-flickity-lazyload="images/pianeti/marte.png" alt="Marte"/></div></a>
-					<a href="pianeti/mercurio.html" title="Mercurio"><div class="carousel-cell"><img class="carousel-image" data-flickity-lazyload="images/pianeti/mercurio.png" alt="Mercurio"/></div></a>
-					<a href="pianeti/nettuno.html" title="Nettuno"><div class="carousel-cell"><img class="carousel-image" data-flickity-lazyload="images/pianeti/nettuno.png" alt="Nettuno"/></div></a>
-					<a href="pianeti/urano.html" title="Urano"><div class="carousel-cell"><img class="carousel-image" data-flickity-lazyload="images/pianeti/urano.png" alt="Urano"/></div></a>
-					<a href="pianeti/venere.html" title="Venere"><div class="carousel-cell"><img class="carousel-image" data-flickity-lazyload="images/pianeti/venere.png" alt="Venere"/></div></a>
-					<a href="pianeti/luna.html" title="Luna"><div class="carousel-cell"><img class="carousel-image" data-flickity-lazyload="images/pianeti/luna.png" alt="Luna"/></div></a>
-					<a href="pianeti/saturno.html" title="Saturno"><div class="carousel-cell cell-large"><img class="carousel-image large" data-flickity-lazyload="images/pianeti/saturno.png" alt="Saturno"/></div></a>
-					<a href="pianeti/terra.html" title="Terra"><div class="carousel-cell"><img class="carousel-image" data-flickity-lazyload="images/pianeti/terra.png" alt="Terra"/></div></a>
+					<a href="pianeti/giove.html" title="Jupiter"><div class="carousel-cell"><img class="carousel-image" data-flickity-lazyload="images/pianeti/giove.png" alt="Jupiter"/></div></a>
+					<a href="pianeti/marte.html" title="Mars"><div class="carousel-cell"><img class="carousel-image" data-flickity-lazyload="images/pianeti/marte.png" alt="Mars"/></div></a>
+					<a href="pianeti/mercurio.html" title="Mercury"><div class="carousel-cell"><img class="carousel-image" data-flickity-lazyload="images/pianeti/mercurio.png" alt="Mercury"/></div></a>
+					<a href="pianeti/nettuno.html" title="Neptune"><div class="carousel-cell"><img class="carousel-image" data-flickity-lazyload="images/pianeti/nettuno.png" alt="Neptune"/></div></a>
+					<a href="pianeti/urano.html" title="Uranus"><div class="carousel-cell"><img class="carousel-image" data-flickity-lazyload="images/pianeti/urano.png" alt="Uranus"/></div></a>
+					<a href="pianeti/venere.html" title="Venus"><div class="carousel-cell"><img class="carousel-image" data-flickity-lazyload="images/pianeti/venere.png" alt="Venus"/></div></a>
+					<a href="pianeti/luna.html" title="Moon"><div class="carousel-cell"><img class="carousel-image" data-flickity-lazyload="images/pianeti/luna.png" alt="Moon"/></div></a>
+					<a href="pianeti/saturno.html" title="Saturn"><div class="carousel-cell cell-large"><img class="carousel-image large" data-flickity-lazyload="images/pianeti/saturno.png" alt="Saturn"/></div></a>
+					<a href="pianeti/terra.html" title="Earth"><div class="carousel-cell"><img class="carousel-image" data-flickity-lazyload="images/pianeti/terra.png" alt="Earth"/></div></a>
 				</div>
 			</div>
 		</section>
@@ -134,10 +131,18 @@
 		</footer>
 	<!-- FOOTER ENDS -->	
 
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/smooth_scroll.js"></script> <!-- SMOOTH SCROLL-->
+	<script src="js/scrollReveal.min.js" type="text/javascript"></script> <!-- SCROLL REVEAL -->
+	<script src="js/functions.js" type="text/javascript"></script>
 
+	<!-- CAROUSEL -->
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> 
+	<script src="js/carousel.js"></script> 
+	
 	<!-- HAMBURGER -->
-	<script src="js/hamburger.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script>
 		$(document).ready(function() {
     		$(".hamburger").on('click', function(){
@@ -146,51 +151,5 @@
 		});
 	</script>
 
-	<!-- CAROUSEL -->
-	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-	<script>
-		$('.carousel').flickity({
-		// options
-		cellAlign: 'left',
-		contain: true,
-		lazyLoad: 2, // load images in selected slide and next 2 slides and previous 2 slides
-		wrapAround: true, // At the end of cells, wrap-around to the other end for infinite scrolling
-		autoPlay: 2000,
-		pauseAutoPlayOnHover: true
-	  });
-	</script>
-
-	<!-- SMOOTH SCROLL -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script>
-		$(document).ready(function(){
-			  // Add smooth scrolling to all links
-			  $("a").on('click', function(event) {
-				if (this.hash !== "") {
-					  // Prevent default anchor click behavior
-					  event.preventDefault();
-					  var hash = this.hash; // Store hash
-					  // Using jQuery's animate() method to add smooth page scroll
-					  $('html, body').animate(
-						{ scrollTop: $(hash).offset().top }, 
-						800, // The optional number specifies the number of milliseconds it takes to scroll to the specified area
-						function(){
-							// Add hash (#) to URL when done scrolling (default click behavior)
-							window.location.hash = hash;
-						  }
-					);
-				}
-			  });
-		});
-	</script> 
-
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- SCROLL REVEAL -->
-	<script src="js/scrollReveal.min.js" type="text/javascript"></script>
-	<!-- FUNCTIONS -->
-	<script src="js/functions.js" type="text/javascript"></script>
 </body>
 </html>
