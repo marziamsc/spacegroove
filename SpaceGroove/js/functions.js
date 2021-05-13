@@ -1,14 +1,7 @@
-$( document ).ready(function() {
-
-// PRELOADER	
-	setTimeout(function(){
-		$('body').addClass('loaded');
-	}, 3000);
+$(document).ready(function() {
 	
 // SCROLL REVEAL
 	window.sr = new scrollReveal();
 
-// PARALLAX IMAGES 
-//	$('#pianeti').parallax("50%", 0.0);
-	  
 });
+

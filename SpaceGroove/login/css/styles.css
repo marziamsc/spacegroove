@@ -210,15 +210,16 @@ section {
 
 
 .login-dark {
-	height:1000px;
-	background:#040916 url(../../images/galaxy.png);
+	height:850px;
+	/*background:#040916 url(../../images/galaxy.png);*/
+	background: url(../../images/galaxy.png) no-repeat fixed center center / cover rgba(0, 0, 0, 0);
 	background-size:cover;
 	position:relative;
   }
   
   .login-dark form {
-	max-width:320px;
-	width:90%;
+	max-width:400px;
+	width:100%;
 	background-color:#132941;
 	padding:40px;
 	border-radius:20px;
@@ -227,7 +228,7 @@ section {
 	top:50%;
 	left:50%;
 	color:#fff;
-	box-shadow:3px 3px 4px rgba(0,0,0,0.2);
+	box-shadow:0px 2px 10px rgba(0,0,0,0.6);
   }
   
   .login-dark .illustration {
@@ -239,22 +240,34 @@ section {
   
   .login-dark form .form-control {
 	background:none;
-	border:none;
-	border-bottom:1px solid #8AF7F7;
-	border-radius:0;
-	box-shadow:none;
+	border: thin solid #132941;
+	border-radius: 20px;
+	box-shadow: 0px 2px 10px rgba(0,0,0,0.6);
+	margin-bottom: 15px;
 	outline:none;
-	color:inherit;
+	color:none;
+	height: 50px;
+	padding: 8px 12px;
+	font-size: 15px;
+	-webkit-appearance:none; /* per eliminare l'effetto gloss in Safari */
+  }
+
+  .login-dark form .form-control:hover {
+	background:#183452;
   }
   
   .login-dark form .btn-primary {
 	background:#214a80;
+	width:150px;
 	border:none;
-	border-radius:8px;
-	padding:11px;
-	margin-top:30px;
+	border-radius: 30px;
+	padding: 15px 20px;
+	margin-top:15px;
+	margin-left: 2px;
+	margin-right: 2px;
 	text-shadow:none;
 	outline:none;
+	font-size: 20px;
   }
   
   .login-dark form .btn-primary:hover, .login-dark form .btn-primary:active {

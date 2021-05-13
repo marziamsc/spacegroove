@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <title>Marte</title>
+    <meta name="author" content="Alessandro Nicolella and Marzia Moscatelli">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	  <meta name="viewport" content="width=device-width initial-scale=1 shrink-to-fit=no">
@@ -10,36 +11,45 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
    <!-- <link href="css/styles.css" rel="stylesheet"> -->
     <link href="css/carousel.css" rel="stylesheet">
+
+    <link href="../css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:100,300,100italic,400,300italic' type='text/css' rel='stylesheet'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' type='text/css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!--
-    <header>
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-          <a class="navbar-brand" href="#">Carousel</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
-              </li>
-            </ul>
-            <form class="form-inline mt-2 mt-md-0">
-              <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-          </div>
-        </nav>
-    </header>
-    -->
+	<nav class="navbar">
+		<a class="logo" href="../index.html"><img src="../images/rocket1_copia.png" alt="logo" style="position:absolute; top:5px;"></a>
+    <ul class="menu">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#pianeti">Pianeti</a></li>
+        <li><a class="current" id="chiSiamo" href="../chisiamo/index.html">Chi Siamo</a></li>
+        <li><a id="giudizio" href="#">Lasciaci un giudizio!</a></li>
+	    	<li class="account"><a href="../signup/index.html">Sign Up</a></li>
+        <li class="account"><a href="../login/index.html">Log In</a></li>
+	  </ul>
+	  <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+  </nav>
+
+  <section id="sfondo">
+      <img src="sfondo/stars.png" id="stars">
+      <img src="sfondo/moon.png" id="moon">
+      <img src="sfondo/mountains_behind.png" id="mountains_behind">
+      <h2 id="text">Marte</h2>
+      <a href="#sec" id="btn">Explore</a>
+      <img src="sfondo/mountains_front.png" id="mountains_front">
+  </section>
+
+  <div class="sec">
 
     <main role="main">
 
@@ -89,17 +99,36 @@
         <!-- FOOTER -->
         <footer class="container">
           <p class="float-right"><a href="#">Back to top</a></p>
-          <p>&copy; 2017-2018 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+          <p>&copy; 2021 SpaceGroove | Web Languages and Technologies' project, by A. Nicolella and M. Moscatelli</p>
         </footer>
         <!-- FOOTER ENDS -->
       
     </main>
+  </div>
+    
+    <script>
+      let stars = document.getElementById('stars');
+      let moon = document.getElementById('moon');
+      let mountains_behind = document.getElementById('mountains_behind');
+      let text = document.getElementById('text');
+      let btn =document.getElementById('btn');
+      let mountains_front =document.getElementById('mountains_front');
+      
 
+      window.addEventListener('scroll', function(){
+          let value= window.scrollY;
+          stars.style.left = value *0.25 + 'px';
+          moon.style.top= value*1.05 +'px';
+          mountains_behind.style.top= value*0.5 +'px';
+          mountains_front.style.top= value*0 +'px';
+          text.style.marginRight = value*2 +'px';
+          btn.style.marginTop= value*1.5+'px';
+      })
+    </script>
     <!-- Bootstrap core JavaScript -->
     <script src="js/jquery-3.2.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-    <script src="js/holder.min.js"></script>
+    
 </body>
 </html>
