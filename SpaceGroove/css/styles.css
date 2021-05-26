@@ -1,0 +1,362 @@
+/* GLOBAL STYLES */
+* {
+	margin: 0px;
+	padding: 0px;
+	scroll-behavior:smooth; /* Safari does not support scroll-behavior: smooth. You'll need some custom javascript to achieve the same effect. */
+}
+
+body {
+    background-color: #040916;
+	font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: #d4e0ff;
+    line-height: 28px;
+    text-align:center;
+    overflow-x: hidden !important;
+    margin: auto !important;
+}
+
+/* HYPERLINK */
+
+a, a:active, a:hover, a:focus {
+    border: 0 none;
+    outline: 0 none;
+    text-decoration: none;
+}
+
+/* TYPOGRAPHIE */
+
+h1 {
+	font-family: 'New Tegomin', serif;
+    font-size: 40px;
+    line-height: 62px;
+	font-weight: 300;
+}
+
+h2 {
+	font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    line-height: 42px;
+	font-weight: 300;
+}
+
+h3 {
+	font-family: 'New Tegomin', serif;
+    font-size: 25px;
+    line-height: 38px;
+    font-weight: 300;
+}
+
+h4 {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+h5 {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+h6 {
+	font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+
+/* FORM GROUPS */
+
+.form-control {
+	background: none repeat scroll 0 0 rgba(255, 255, 255, 0.5);
+	border-radius: 0px;
+    box-shadow: none;
+    height: 57px;
+    padding-left: 20px;
+}
+
+/* CUSTOM CLASSES */
+
+.white-text {
+	color: #F1F6FB;
+}
+
+.colored-line-small-center {
+	background: #97c7ee;
+	display: block;
+	margin: auto;
+    height: 1px;
+    width: 25%;
+    z-index: 1;
+	margin-bottom: 5px;
+}
+
+.colored-line-right {
+	background: #97c7ee;
+	display: block;
+	float: right;
+    height: 1px;
+    width: 165px;
+    z-index: 1;
+}
+
+.button-leweb {
+	background: none repeat scroll 0 0 rgba(22, 182, 234, 0.5);
+    border: 1px solid #fff;
+	color: #fff;
+	border-radius: 0px;
+    box-shadow: none;
+	height: 57px;
+	padding-left: 18px;
+	padding-right: 18px;
+	
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease; 
+}
+
+
+.button-leweb:hover {
+	background:#1f598e;
+}
+
+.float-left {
+    float:left !important;
+}
+
+.float-right {
+    float:right !important;
+}
+
+.float-none {
+    float:none !important;
+}
+
+
+/* SECTIONS */
+
+section {
+	padding: 120px 0px;
+}
+
+/* NAVBAR */
+
+.hamburger{
+    display: none;
+}
+.navbar{
+	width: 100%;
+	font-family: 'New Tegomin', serif;
+    position:absolute;
+	top: 3%;
+    z-index: 1000;
+	padding-left: 35px;
+	padding-right: 20px;
+    display:flex
+}
+
+.menu{
+    width: 100%;
+}
+
+.menu li{
+    display:inline-block;
+	align-items:center;
+    color: white;
+	padding: 0px 30px;
+}
+
+.account {
+	float:right !important;
+	padding: 0px 20px !important;
+}
+
+#chiSiamo {
+	cursor:help;
+}
+
+.current {
+	background-color: #102d53;
+	border-radius: 10px;
+	padding: 5px 10px;
+	color:#d0ff00;
+	text-transform:uppercase;
+}
+
+.menu a:hover {
+	background-color: #102d53;
+    color: red;
+	border-radius: 10px;
+	padding: 5px 10px;
+	font-size: 120%;
+	transition: .4s background-color;
+}
+
+@media (max-width: 830px){
+
+    .account{display: none;}
+	.logo {display: none;}
+
+    .menu {background:#040916; position: absolute; top: 30px; right:-100%; padding-top: 80px; padding-bottom: 20px;}
+    .menu li {display: block; padding: 10px 30px !important; font-size: 20px; float:none !important;} 
+
+    .hamburger{
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 40px;
+        right: 30px;
+    }
+
+    .menuopen{right: 3%;}
+    .hamburger span {background: white; width: 100%; display: block; height: 3px; margin-bottom: 5px;}
+}
+
+
+/* HEADER */
+
+#header {
+	background: url(../images/galaxy.png) no-repeat center center;
+	background-size: cover;
+	height:100%;
+	padding: 0px;
+}
+
+#header .container {
+	background: url(../images/pattern.png) repeat 0 0; 
+	height: 100vh;
+	width: 100% !important;
+	padding: 0px;	
+	z-index: 998;
+}
+
+#header .col-md-8 {
+	top: 30%;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	display: block;
+	margin-left:auto;
+	margin-right:auto;
+	z-index: 999;
+}
+
+#header .textLogo {
+	margin-bottom: 15px;
+	width: 80%;
+}
+
+.animation {
+	width: 100%;
+	bottom: 20px; /* margine dal fondo */
+	height: 80px; 
+	overflow: auto;
+	position: absolute;
+	z-index: 999; 
+	text-align:center;
+	text-decoration: none;
+}
+
+#header .fa-angle-down {
+	text-align: center;
+	font-size: 70px;
+	color: rgb(255, 255, 255);
+	
+	-webkit-animation: leweb_fade_move_down 2s ease-in-out infinite;
+	-moz-animation: leweb_fade_move_down 2s ease-in-out infinite;
+	animation: leweb_fade_move_down 2s ease-in-out infinite;
+   }
+
+/* Animated Arrow Down Header */
+	
+@-webkit-keyframes leweb_fade_move_down {
+  0%   { -webkit-transform:translate(0,-20px); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { -webkit-transform:translate(0,20px); opacity: 0; }
+}
+@-moz-keyframes leweb_fade_move_down {
+  0%   { -moz-transform:translate(0,-20px); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { -moz-transform:translate(0,20px); opacity: 0; }
+}
+@keyframes leweb_fade_move_down {
+  0%   { transform:translate(0,-20px); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { transform:translate(0,20px); opacity: 0; }
+}
+
+#about .container{
+	margin-top: -60px;
+	margin-bottom: -60px;
+}
+
+/* CAROUSEL */ 
+
+#pianeti {
+	background: url(../images/bg-subscribe.png) no-repeat fixed center center / cover rgba(0, 0, 0, 0);
+	padding: 0px;
+	min-height: 430px;
+}
+
+.carousel{
+    padding: 40px 0px 0px 0px;
+}
+
+.carousel-cell{
+    height: 350px; 
+    width: 400px;
+    border-radius: 100%; 
+    line-height: 350px;
+    text-align:top;    
+    margin-right: 0px;
+    color: white;
+}
+.carousel-cell.cell-large {height:300px; width: 660px;}
+
+.carousel-image {
+	display: block;
+	height: 300px;
+	/* set min-width, allow images to set cell width */
+	min-width: 150px;
+	max-width: 100%;
+	margin-right: 10px;
+	margin-top:15px;
+	margin-left: 15px;
+	align-items: center;
+	/* vertically center */
+	top:50%;
+}
+.carousel-image:hover, .carousel-image.large:hover{
+	transition: .4s;
+	transform: scale(1.1);
+}
+
+/* white circles */
+.flickity-page-dots .dot {
+	width: 12px;
+	height: 12px;
+	opacity: 1;
+	background: transparent;
+	border: 2px solid white;
+}
+
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+	background: violet;
+}
+
+
+/* FOOTER */
+
+#footer {
+	border-top: 2px solid #223461;
+	padding: 2% 0;
+}
+
+#footer p {
+	margin: 0px 0px -5px;
+}
