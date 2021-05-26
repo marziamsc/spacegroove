@@ -1,0 +1,158 @@
+/* FORM */
+
+.login-dark {
+	height:850px;
+	/*background:#040916 url(../../images/galaxy.png);*/
+	background: url(../../images/galaxy.png) no-repeat fixed center center / cover rgba(0, 0, 0, 0);
+	background-size:cover;
+	position:relative;
+  }
+  
+.login-dark form {
+	max-width:400px;
+	width:100%;
+	background-color:#132941;
+	padding:40px;
+	border-radius:20px;
+	transform:translate(-50%, -50%);
+	position:absolute;
+	top:50%;
+	left:50%;
+	color:#fff;
+	box-shadow:0px 2px 10px rgba(0,0,0,0.6);
+}
+  
+.login-dark .illustration {
+	text-align:center;
+	padding:15px 0 20px;
+	font-size:100px;
+	color:#2980ef;
+}
+  
+.login-dark form .form-control {
+	background:none;
+	border: thin solid #132941;
+	border-radius: 20px;
+	box-shadow: 0px 2px 10px rgba(0,0,0,0.6);
+	margin-bottom: 15px;
+	outline:none;
+	color:none;
+	height: 50px;
+	padding: 8px 12px;
+	font-size: 15px;
+	-webkit-appearance:none; /* per eliminare l'effetto gloss in Safari */
+}
+
+.login-dark form .form-control:hover {
+	background:#183452;
+}
+  
+.login-dark form .btn-primary {
+	background:#214a80;
+	width:150px;
+	border:none;
+	border-radius: 30px;
+	padding: 15px 20px;
+	margin-top:15px;
+	margin-left: 2px;
+	margin-right: 2px;
+	text-shadow:none;
+	outline:none;
+	font-size: 20px;
+}
+  
+.login-dark form .btn-primary:hover, .login-dark form .btn-primary:active {
+	background:#4387e0;
+	outline:none;
+	transition: .3s background-color;
+}
+  
+.login-dark form .forgot {
+	display:block;
+	text-align:center;
+	font-size:12px;
+	color:#6f7a85;
+	opacity:0.9;
+	text-decoration:none;
+}
+  
+.login-dark form .forgot:hover, .login-dark form .forgot:active {
+	opacity:1;
+	text-decoration:none;
+}
+  
+.login-dark form .btn-primary:active {
+	transform:translateY(1px);
+}
+
+/* The container */
+.cont {
+	display: block;
+	position: relative;
+	padding-left: 0px;
+	margin-bottom: 0px;
+	cursor: pointer;
+	font-size: 15px;
+	font-weight: 200;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .cont input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+	position: absolute;
+	top: 0px;
+	left: 75px;
+	height: 25px;
+	width: 25px;
+	border-radius: 20%;
+	background-color: #214a80;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .cont:hover input ~ .checkmark {
+	background-color: #4387e0;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .cont input:checked ~ .checkmark {
+	background-color: #4387e0;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .cont input:checked ~ .checkmark:after {
+	display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .cont .checkmark:after {
+	left: 10px;
+	top: 7px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+  }
+  
+  
